@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--very-dark-blue-main);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 375px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.card {
+  background-color: var(--very-dark-blue-card);
+  max-width: 80%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card .nft-name {
+  color: var(--white);
+  margin-top: 1.5rem;
+  font-size: 18px;
+}
+
+.card .nft-desc {
+  margin-top: 1.5rem;
+  color: var(--soft-blue);
+}
+
+.card .card-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.card .card-bottom .value {
+  color: var(--cyan);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.card .card-bottom .value img {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.card .card-bottom .time {
+  color: var(--soft-blue);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.card .card-bottom .time img {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.card .line {
+  background-color: var(--very-dark-blue-line);
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 0.1rem;
+}
+
+.card .creator {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card .creator img {
+  width: 2rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--white);
+  justify-self: flex-start;
+}
+
+.card .creator p {
+  justify-self: center;
+  margin-left: 1rem;
+  text-align: center;
+  color: var(--soft-blue);
+}
+
+.card .creator p .name {
+  color: var(--white);
+}
+
+.attribution {
+  color: var(--white);
+}
+
+@media (min-width: 375px) {
+  body {
+    max-width: 1440px;
+  }
+  .card {
+    max-width: 80%;
+  }
+}
